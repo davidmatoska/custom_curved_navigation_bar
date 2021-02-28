@@ -34,19 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
     keepPage: true,
   );
 
-  Widget buildPageView() {
-    return PageView(
-      controller: _pageController,
-      onPageChanged: (index) {
-        setState(() {
-          _currentPage = index; // update index when swap
-        });
-      },
-      children: <Widget>[
-        // Your pages
-      ],
-    );
-  }
 
   @override
 
